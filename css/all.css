@@ -1,0 +1,127 @@
+.wrap {
+    margin: 150px auto;
+}
+.c_red{
+  color: red;
+}
+.m_0a{
+  margin: 0 auto;
+  text-align: center;
+}
+.controlBox{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+   width: 200px;
+  height: 60px;
+  border:1px solid #000;
+/*   漸層 */
+  background: linear-gradient(45deg, rgba(90, 145, 255, 1)20%, rgba(34, 4, 207, 0.5)66%);
+background: -moz-linear-gradient(45deg, rgba(90, 145, 255, 1)20%, rgba(34, 4, 207, 0.5)66%);
+background: -webkit-linear-gradient(45deg, rgba(90, 145, 255, 1)20%, rgba(34, 4, 207, 0.5)66%);
+background: -o-linear-gradient(45deg, rgba(90, 145, 255, 1)20%, rgba(34, 4, 207, 0.5)66%);
+/*   圓角 */
+  border-radius: 25px 25px 25px 25px;
+-webkit-border-radius: 25px 25px 25px 25px;
+-moz-border-radius: 25px 25px 25px 25px;
+/*   陰影 */
+  box-shadow: -5px 7px 14px #333333;
+-webkit-box-shadow: -5px 7px 14px #333333;
+-moz-box-shadow: -5px 7px 14px #333333;
+}
+.ml_150 {
+    margin-left: 150px;
+}
+
+.mb_100 {
+    margin-bottom: 100px;
+}
+
+.audioOpen {
+    width: 30px;
+    height: 30px;
+    background: url(https://i.imgur.com/mRHhkYf.png);
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.audioClose {
+    width: 30px;
+    height: 30px;
+    background: url(https://i.imgur.com/vkIi99P.png);
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.bar {
+    /* background-color: blue; */
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -65px;
+    left: -35px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -moz-transform: rotate(-90deg);
+    /* Firefox */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(-90deg);
+    /* Opera */
+    display: flex;
+    align-items: center;
+}
+
+.volumeBox {
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.sendSound {
+    margin-left: 10px;
+    -webkit-appearance: none;
+    /*清除系统默认样式*/
+    width: 80px;
+    background: -webkit-linear-gradient(#ccc, #ccc) no-repeat, rgba(0, 0, 0, 0.4);
+    /*设置左边颜色为#61bd12，右边颜色为#ddd*/
+    background-size: 25% 100%;
+    /*设置左右宽度比例*/
+    height: 5px;
+    /*横条的高度*/
+}
+
+.sendSound::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /*清除系统默认样式*/
+    height: 15px;
+    /*拖动块高度*/
+    width: 15px;
+    /*拖动块宽度*/
+    background: #f3f3f3;
+    /*拖动块背景*/
+    border-radius: 50%;
+    /*外观设置为圆形*/
+    border: solid 1px #ddd;
+    /*设置边框*/
+    cursor: pointer;
+}
+
+.ta_center{
+  text-align: center;
+}
+
+.showVolume{
+  width: 25px;
+}
+
+.controlBoxP{
+font-size: 8px;
+  margin: 0;
+  color: #DDD;
+}

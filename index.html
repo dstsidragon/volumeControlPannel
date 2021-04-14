@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音量控制面板</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/all.css">
+  <script src="js/all.js"></script>
+</head>
+
+<body>
+  <h1 class="m_0a c_red">控制板可拖曳!!<h1> 
+    <div class="wrap">
+        <!-- 崁入音訊檔  -->
+        <audio controls autoplay id="audio">
+          <source src="https://raw.githubusercontent.com/hsiangfeng/RagnarokShop/gh-pages/static/08.mp3" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+      
+        <!-- 音量控制 -->
+        <div id="controlBox" class="controlBox m_0a">
+          <!--       音量顯示 -->
+           <div >
+              <input id="showVolume" class="showVolume ta_center" type="text" min="0" max="100" name="sendSound" value="" readonly>
+             <p class="controlBoxP">音量%</p>
+           </div>
+          <!-- 音量增加 -->
+          <div >
+            <input id="volume" type="button" value="+">
+             <p class="controlBoxP">增大</p>
+          </div>
+          <!--       音量減少 -->
+          <div >
+          <input id="volume-" type="button" value="-">
+             <p class="controlBoxP">減小</p>
+             </div>
+          <!--       音量條 -->
+         <div>
+            <span id="volumeBox" class="volumeBox">
+            <div id="bar" class="bar">
+              <input type="range" min="0" max="100" value="" id="sendSound" class="sendSound">
+              </div>
+            <div id="audioOpen" class="audioOpen"></div>
+          </span>
+             <p class="controlBoxP">音量條</p>
+         </div>
+    
+    
+    
+        </div>
+      </div>
+    
+</body>
+
+</html>
